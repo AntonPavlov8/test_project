@@ -1,11 +1,6 @@
 @use "../utils/variables";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap");
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+
 body,
 p {
     margin: 0;
@@ -26,7 +21,6 @@ html {
     height: 50px;
     max-width: 50px;
     width: auto;
-    float: top;
 }
 .advantages-section {
     padding: 40px 0 87px 20px;
@@ -42,14 +36,14 @@ html {
         color: variables.$iconAccentColor;
     }
     .header-one::before {
-        @include advantages-icon("../../images/advantages-photo1.png");
+        @include advantages-icon("/images/sprite.svg#icon-advantages-cherries");
     }
-    .header-two::before {
-        @include advantages-icon("../../images/advantages-photo2.png");
-    }
-    .header-three::before {
-        @include advantages-icon("../../images/advantages-photo3.png");
-    }
+    // .header-two::before {
+    //     @include advantages-icon("../../images/advantages-photo2.png");
+    // }
+    // .header-three::before {
+    //     @include advantages-icon("../../images/advantages-photo3.png");
+    // }
     .advantages__text {
         font: 700 12px/20px "DM Sans";
     }
